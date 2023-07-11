@@ -1,0 +1,338 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+
+body {
+  color: black;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+
+.site-title {
+  line-height: 1px;
+}
+.site-title a {
+  display: block;
+}
+
+.sec-title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 70px;
+  text-shadow: 5px 0px 1px rgb(30, 200, 30);
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+#header .twitter {
+  min-width: 20px;
+  min-height: 20px;
+}
+#header .world-press {
+  min-width: 20px;
+  min-height: 20px;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 30px;
+  transition: color 0.8s;
+}
+#header li a {
+  color: black;
+  transition: color 0.5s;
+}
+#header li a:hover {
+  opacity: 1;
+  color: rgb(30, 200, 30);
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 65px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  background-size: cover;
+  background-color: beige;
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+#about ul {
+  margin-bottom: 30px;
+}
+#about li {
+  border-bottom: solid 1px rgba(166, 247, 169, 0.231372549);
+}
+#about li:first-child {
+  margin-bottom: 30px;
+}
+#about p {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background: rgba(166, 247, 169, 0.231372549);
+}
+#about .hidden {
+  display: none;
+}
+
+/*-------------------------------------------
+Works
+-------------------------------------------*/
+#works ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#works li {
+  width: 31%;
+  margin-bottom: 40px;
+}
+#works .works-name {
+  position: relative;
+  bottom: 20px;
+}
+#works ul li img {
+  cursor: pointer;
+  width: 320px;
+  max-height: 200px;
+  transition: all 0.3s;
+}
+#works ul li img:hover {
+  transform: scale(1.2, 1.2);
+  opacity: 0.7;
+}
+#works .works-text {
+  display: flex;
+  justify-content: space-between;
+}
+#works .step-up {
+  background-color: rgba(166, 247, 169, 0.231372549);
+}
+
+/*-------------------------------------------
+Personality
+-------------------------------------------*/
+#personality ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#personality li {
+  width: 30%;
+  margin-bottom: 150px;
+  background: rgba(166, 247, 169, 0.231372549);
+}
+#personality .personality-name {
+  position: relative;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+#personality .text-01 {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 5px;
+}
+#personality .text-02 {
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 40px;
+  background: rgba(166, 247, 169, 0.231372549);
+}
+#personality .personality-icon {
+  margin: auto;
+}
+
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#contact dt {
+  width: 15%;
+}
+#contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+#contact dd input {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+#contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+}
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+  transition: all 0.5s;
+}
+#contact .button input:hover {
+  background-color: rgba(166, 247, 169, 0.231372549);
+  color: black;
+}
+
+/* Footer */
+#footer {
+  background: rgba(166, 247, 169, 0.231372549);
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  margin: 0 auto;
+  padding: 0 2%;
+  max-width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+#footer ul {
+  display: flex;
+  padding: 10px 0;
+}
+#footer li {
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 30px;
+  transition: color 0.8s;
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+#footer li a {
+  color: black;
+  transition: color 0.5s;
+}
+#footer li a:hover {
+  opacity: 1;
+  color: rgb(30, 200, 30);
+}
+#footer li .twitter, #footer li .world-press {
+  min-width: 20px;
+  min-height: 20px;
+}
+#footer li:first-child {
+  margin-left: 0;
+}
+
+#page-top {
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  transition: 0.3s;
+}
+#page-top:hover {
+  opacity: 1;
+  color: rgb(30, 200, 30);
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+  .site-title {
+    margin-top: 20px;
+  }
+  .sec-title {
+    margin-bottom: 40px;
+  }
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+  /*-------------------------------------------
+  Works
+  -------------------------------------------*/
+  #works ul, #personality ul {
+    flex-direction: column;
+  }
+  #works li, #personality li {
+    width: 100%;
+  }
+  /*-------------------------------------------
+  Personality
+  -------------------------------------------*/
+  /*-------------------------------------------
+  Contact
+  -------------------------------------------*/
+}
+@media screen and (max-width: 600px) and (max-width: 600px) {
+  #contact dl {
+    flex-direction: column;
+  }
+  #contact dt, #contact dd {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
