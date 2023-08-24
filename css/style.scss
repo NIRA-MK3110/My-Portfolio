@@ -1,0 +1,9 @@
+// 色や配色・背景色などの変数を定義
+@use 'variables';
+// メディアクエリ用
+@use 'mq' as mq; // 'as mq' で名前空間を定義
+// pc,共通のスタイリングをインポート
+@use 'common';
+// デバイスサイズごとのスタイル
+@use 'tablet';
+@use 'mobile';
