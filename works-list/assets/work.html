@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nir@工業株式会社</title>
+    <link rel="stylesheet" href="./css/css.reset.css">
+    <meta name="description" content="建設工事や建物内外の保守管理、地域開発、都市開発、コンサルティングを行う建設会社です。長年培ってきた技術の力で、豊かな社会の創造と発展に貢献いたします。">
+    <link rel="icon" href="/nir@/assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-content" id="page-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__logo"><a class="header__logo-link" href="index.html"><img alt="ロゴ" class="header__logo-image" src="images/logo.png"></a></h1>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="company.html">企業情報</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="work.html">実績紹介</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="news.html">ニュース</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="contact.html">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<!-- Mobile Header -->
+<header class="mobile-header">
+    <div class="mobile-header__container">
+        <h1 class="mobile-header__logo">
+            <a class="mobile-header__logo-link" href="index.html">
+                <img alt="ロゴ" class="mobile-header__logo-image" src="images/logo.png">
+            </a>
+        </h1>
+        <!-- Hamburger Menu Icon -->
+        <div class="mobile-header__hamburger-menu" onclick="toggleMenu()" id="mobile-header__hamburger-menu">
+            <div class="mobile-header__bar"></div>
+            <div class="mobile-header__bar"></div>
+            <div class="mobile-header__bar"></div>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav class="mobile-header__nav" id="mobile-header__nav">
+            <!-- Add: Close Button -->
+            <div class="mobile-header__close-button" id="mobile-header__close-button">×</div>
+            <ul class="mobile-header__nav-list">
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="index.html">トップ</a>
+                </li>
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="company.html">企業情報</a>
+                </li>
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="work.html">実績紹介</a>
+                </li>
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="news.html">ニュース</a>
+                </li>
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="contact.html">お問い合わせ</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        <main class="main-content" id="main-content">
+<!-- work -->
+<section class="work">
+    <h2 class="work__title">実績紹介</h2>
+    <div class="work__container">
+        <!-- 公共事業のスライドショー -->
+        <h3 class="work__subtitle">公共事業</h3>
+        <div class="work-public__image-slideshow">
+            <div class="slide active">
+                <img alt="公共事業-1" class="work-public__image" src="images/work-public-1.jpg">
+                <p class="image-caption">公共事業プロジェクト1-1A</p>
+            </div>
+            <div class="slide">
+                <img alt="公共事業-2" class="work-public__image" src="images/work-public-2.jpg">
+                <p class="image-caption">公共事業プロジェクト2-1A</p>
+            </div>
+            <div class="slide">
+                <img alt="公共事業-3" class="work-public__image" src="images/work-public-3.jpg">
+                <p class="image-caption">公共事業プロジェクト3-1A</p>
+            </div>
+            <div class="slide">
+                <img alt="公共事業-4" class="work-public__image" src="images/work-public-4.jpg">
+                <p class="image-caption">公共事業プロジェクト4-1A</p>
+            </div>
+            <div class="slide">
+                <img alt="公共事業-5" class="work-public__image" src="images/work-public-5.jpg">
+                <p class="image-caption">公共事業プロジェクト5-1A</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="prev" data-target="publicSlideshow">前へ</button>
+            <button class="next" data-target="publicSlideshow">次へ</button>
+        </div>
+        <!-- マンション・住宅のスライドショー -->
+        <h3 class="work__subtitle">マンション・住宅</h3>
+        <div class="work-apartment__image-slideshow">
+            <div class="slide active">
+                <img alt="マンション・住宅-1" class="work-public__image" src="images/work-apartment-1.jpg">
+                <div class="image-caption">マンションプロジェクト1-1B</div>
+            </div>
+            <div class="slide">
+                <img alt="マンション・住宅-2" class="work-public__image" src="images/work-apartment-2.jpg">
+                <div class="image-caption">マンションプロジェクト2-1B</div>
+            </div>
+            <div class="slide">
+                <img alt="マンション・住宅-3" class="work-public__image" src="images/work-apartment-3.jpg">
+                <div class="image-caption">マンションプロジェクト3-1B</div>
+            </div>
+            <div class="slide">
+                <img alt="マンション・住宅-4" class="work-public__image" src="images/work-apartment-4.jpg">
+                <div class="image-caption">マンションプロジェクト4-1B</div>
+            </div>
+            <div class="slide">
+                <img alt="マンション・住宅-5" class="work-public__image" src="images/work-apartment-5.jpg">
+                <div class="image-caption">マンションプロジェクト5-1B</div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="prev" data-target="apartmentSlideshow">前へ</button>
+            <button class="next" data-target="apartmentSlideshow">次へ</button>
+        </div>
+    </div>
+</section>
+
+        </main><!-- Footer -->
+        <footer class="footer">
+            <div class="footer__section--privacy">
+                <a class="footer__link" href="privacy.html">プライバシーポリシー</a>
+            </div>
+            <div class="footer__section--contact">
+                <a class="footer__link" href="contact.html">お問い合わせ</a>
+            </div>
+            <div class="footer__section--copyright">
+                <div class="footer__text">
+                    Copyright.© 2023 nir@工業株式会社. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

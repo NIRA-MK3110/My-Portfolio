@@ -1,0 +1,73 @@
+@use 'mq' as mq; // 同じ名前空間
+@use 'variables' as vars; // 変数ファイルの相対パスが必要です
+
+@include mq.mq('sm') {
+  // ボディとテキスト
+  body {
+    font-size: 15px;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+  .site-logo {
+    width: 40px;
+    height: auto;
+    margin: auto;
+  }
+  .text {
+    font-size: 20px;
+  }
+
+  // ヘッダー
+  #header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .header-title-container {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  // メインナビゲーション
+  .main-navigation {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // ナビゲーションアイテム
+  .navigation-item,
+  .other-navigation-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  // サブメニューのトグルとそのコンテナ
+  .navigation-item.has-subnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation-item.has-subnav label[for="menu"] {
+    position: relative; // 以前は 'absolute' だった
+    top: 10px; // 以前の設定をリセット
+    right: auto; // 以前の設定をリセット
+    transform: none; // 以前の設定をリセット
+    transform: translateY(-50%) rotate(90deg); // こちらを修正
+  }
+
+  #menu:checked + label + .other-navigation-list,
+  #menu:checked + .other-navigation-list {
+    position: static;
+    display: block;
+    margin: 10px auto; // 変更: サブメニューを中央に配置
+  }
+}

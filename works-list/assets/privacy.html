@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nir@工業株式会社</title>
+    <link rel="stylesheet" href="./css/css.reset.css">
+    <meta name="description" content="建設工事や建物内外の保守管理、地域開発、都市開発、コンサルティングを行う建設会社です。長年培ってきた技術の力で、豊かな社会の創造と発展に貢献いたします。">
+    <link rel="icon" href="/nir@/assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-content" id="page-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__logo"><a class="header__logo-link" href="index.html"><img alt="ロゴ" class="header__logo-image" src="images/logo.png"></a></h1>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="company.html">企業情報</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="work.html">実績紹介</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="news.html">ニュース</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="contact.html">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<!-- Mobile Header -->
+<header class="mobile-header">
+    <div class="mobile-header__container">
+        <h1 class="mobile-header__logo">
+            <a class="mobile-header__logo-link" href="index.html">
+                <img alt="ロゴ" class="mobile-header__logo-image" src="images/logo.png">
+            </a>
+        </h1>
+        <!-- Hamburger Menu Icon -->
+        <div class="mobile-header__hamburger-menu" onclick="toggleMenu()" id="mobile-header__hamburger-menu">
+            <div class="mobile-header__bar"></div>
+            <div class="mobile-header__bar"></div>
+            <div class="mobile-header__bar"></div>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav class="mobile-header__nav" id="mobile-header__nav">
+            <!-- Add: Close Button -->
+            <div class="mobile-header__close-button" id="mobile-header__close-button">×</div>
+            <ul class="mobile-header__nav-list">
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="index.html">トップ</a>
+                </li>
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="company.html">企業情報</a>
+                </li>
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="work.html">実績紹介</a>
+                </li>
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="news.html">ニュース</a>
+                </li>
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="contact.html">お問い合わせ</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        <main class="main-content" id="main-content">
+            <section class="privacy">
+                <h2 class="privacy__title">プライバシーポリシー</h2>
+                <div class="privacy__container">
+                    <div class="privacy__section">
+                        <h3 class="privacy__subtitle">個人情報</h3>
+                        <p class="privacy__text">個人情報の保護方針に関するテキストが入ります。</p>
+                    </div>
+                    <div class="privacy__section">
+                        <h3 class="privacy__subtitle">取得する個人情報について</h3>
+                        <table class="privacy__table">
+                            <thead>
+                                <tr>
+                                    <th class="privacy__table-header">個人情報の種別</th>
+                                    <th class="privacy__table-header">利用目的</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="privacy__table-row">
+                                    <td class="privacy__table-data">種別情報1</td>
+                                    <td class="privacy__table-data">利用目的の1番目のテキストが入ります</td>
+                                </tr>
+                                <tr class="privacy__table-row">
+                                    <td class="privacy__table-data">種別情報2</td>
+                                    <td class="privacy__table-data">利用目的の2番目のテキストが入ります</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="privacy__section">
+                        <h3 class="privacy__subtitle">個人情報の第三者提供</h3>
+                        <ul class="privacy__list">
+                            <li class="privacy__list-item">ダミーテキスト1</li>
+                            <li class="privacy__list-item">ダミーテキスト2</li>
+                        </ul>
+                    </div>
+                    <div class="privacy__section">
+                        <h3 class="privacy__subtitle">個人情報の開示、訂正、削除</h3>
+                        <ol class="privacy__ordered-list">
+                            <li class="privacy__ordered-item">当社は，本人から個人情報の開示を求められたときは、お申し出いただいた方がご本人であることを確認したうえで、本人に対し開示します。</li>
+                            <li class="privacy__ordered-item">ダミーテキストダミーテキストダミーテキストダミーテキスト。</li>
+                        </ol>
+                    </div>
+                    <div class="privacy__section">
+                        <h3 class="privacy__subtitle">プライバシーポリシーの変更</h3>
+                        <ol class="privacy__ordered-list">
+                            <li class="privacy__ordered-item">本ポリシーの内容は、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</li>
+                            <li class="privacy__ordered-item">ダミーテキストダミーテキストダミーテキストダミーテキスト。</li>
+                        </ol>
+                    </div>
+                    <div class="privacy__section">
+                        <h3 class="privacy__subtitle">お問い合わせ窓口</h3>
+                        <address class="privacy__contact">
+                            <p class="privacy__contact-title">個人情報問合せ窓口</p>
+                            <p class="privacy__contact-detail">個人情報保護管理者：練習 太郎</p>
+                            <p class="privacy__contact-detail">住所：東京都品川区東品川2丁目 ウエストビル14階</p>
+                            <p class="privacy__contact-detail">電話：00-0000-0000</p>
+                            <p class="privacy__contact-detail">Email：info@xxxxxxxx.jp</p>
+                        </address>
+                    </div>
+                </div>
+            </section>
+        </main><!-- Footer -->
+        <footer class="footer">
+            <div class="footer__section--privacy">
+                <a class="footer__link" href="privacy.html">プライバシーポリシー</a>
+            </div>
+            <div class="footer__section--contact">
+                <a class="footer__link" href="contact.html">お問い合わせ</a>
+            </div>
+            <div class="footer__section--copyright">
+                <div class="footer__text">
+                    Copyright.© 2023 nir@工業株式会社. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

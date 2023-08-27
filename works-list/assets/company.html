@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nir@工業株式会社</title>
+    <link rel="stylesheet" href="./css/css.reset.css">
+    <meta name="description" content="建設工事や建物内外の保守管理、地域開発、都市開発、コンサルティングを行う建設会社です。長年培ってきた技術の力で、豊かな社会の創造と発展に貢献いたします。">
+    <link rel="icon" href="/nir@/assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-content" id="page-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__logo"><a class="header__logo-link" href="index.html"><img alt="ロゴ" class="header__logo-image" src="images/logo.png"></a></h1>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="company.html">企業情報</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="work.html">実績紹介</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="news.html">ニュース</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="contact.html">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<!-- Mobile Header -->
+<header class="mobile-header">
+    <div class="mobile-header__container">
+        <h1 class="mobile-header__logo">
+            <a class="mobile-header__logo-link" href="index.html">
+                <img alt="ロゴ" class="mobile-header__logo-image" src="images/logo.png">
+            </a>
+        </h1>
+        <!-- Hamburger Menu Icon -->
+        <div class="mobile-header__hamburger-menu" onclick="toggleMenu()" id="mobile-header__hamburger-menu">
+            <div class="mobile-header__bar"></div>
+            <div class="mobile-header__bar"></div>
+            <div class="mobile-header__bar"></div>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav class="mobile-header__nav" id="mobile-header__nav">
+            <!-- Add: Close Button -->
+            <div class="mobile-header__close-button" id="mobile-header__close-button">×</div>
+            <ul class="mobile-header__nav-list">
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="index.html">トップ</a>
+                </li>
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="company.html">企業情報</a>
+                </li>
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="work.html">実績紹介</a>
+                </li>
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="news.html">ニュース</a>
+                </li>
+                <li class="mobile-header__nav-item">
+                    <a class="mobile-header__nav-link" href="contact.html">お問い合わせ</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        <main class="main-content" id="main-content">
+            <!-- company -->
+            <section class="company">
+                <h2 class="company__title">企業情報</h2>
+                <div class="company__container">
+                    <div class="company__text-block">
+                        <h3 class="company__subtitle">経営理念</h3>
+                        <p class="management-philosophy__text">技術の力で豊かな社会を創造する</p>
+                        <p class="company__text">経営理念のテキスト<br>
+                        経営理念は重要です。<br>
+                        会社と社員のコミュニケーションの１つです。</p>
+                    </div>
+                    <div class="company__image-block"><img alt="企業情報" class="company__image" src="images/company-mission.jpg"></div>
+                </div>
+            </section><!-- 会社概要 -->
+            <section class="company-profile">
+                <div class="company__container">
+                    <!-- タイトル -->
+                    <h3 class="company-profile__subtitle">会社概要</h3>
+                    <table class="company-profile__table">
+                        <!-- 商号 -->
+                        <tr class="company-profile__row">
+                            <td class="company-profile__cell-label">商号:</td>
+                            <td class="company-profile__cell-info">nir@工業株式会社</td>
+                        </tr><!-- 所在地 -->
+                        <tr class="company-profile__row">
+                            <td class="company-profile__cell-label">従業員:</td>
+                            <td class="company-profile__cell-info">100名（2023年3月31日時点）</td>
+                        </tr><!-- 代表取締役 -->
+                        <tr class="company-profile__row">
+                            <td class="company-profile__cell-label">代表取締役:</td>
+                            <td class="company-profile__cell-info">nir@　練習</td>
+                        </tr><!-- 設立日 -->
+                        <tr class="company-profile__row">
+                            <td class="company-profile__cell-label">設立日:</td>
+                            <td class="company-profile__cell-info">2020年4月1日</td>
+                        </tr><!-- 資本金 -->
+                        <tr class="company-profile__row">
+                            <td class="company-profile__cell-label">資本金:</td>
+                            <td class="company-profile__cell-info">1億円</td>
+                        </tr><!-- 事業内容 -->
+                        <tr class="company-profile__row">
+                            <td class="company-profile__cell-label">事業内容:</td>
+                            <td class="company-profile__cell-info">建設工事全般、都市開発、コンサルティング事業</td>
+                        </tr>
+                    </table>
+                </div>
+            </section><!-- 所在地 -->
+            <section class="location">
+                <div class="company__container">
+                    <!-- タイトル -->
+                    <h3 class="location__subtitle">所在地</h3><!-- 地図 -->
+                    <iframe allowfullscreen height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5448.466513732293!2d139.8089757128294!3d35.709551240619795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2z5p2x5Lqs44K544Kr44Kk44OE44Oq44O8!5e0!3m2!1sja!2sjp!4v1692927447124!5m2!1sja!2sjp" style="border:0;" width="600"></iframe>
+                    <div class="location__text__group">
+                        <!-- 氏名 -->
+                        <div class="location__name">
+                            <p class="location__text">nir@工業株式会社</p>
+                        </div><!-- 住所 -->
+                        <div class="location__address">
+                            <p class="location__text">〒123-4567</p>
+                            <p class="location__text">東京都中央区12-3-4</p>
+                        </div><!-- 電話番号 -->
+                        <div class="location__phone">
+                            <p class="location__text">電話番号: 03-1234-5678</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main><!-- Footer -->
+        <footer class="footer">
+            <div class="footer__section--privacy">
+                <a class="footer__link" href="privacy.html">プライバシーポリシー</a>
+            </div>
+            <div class="footer__section--contact">
+                <a class="footer__link" href="contact.html">お問い合わせ</a>
+            </div>
+            <div class="footer__section--copyright">
+                <div class="footer__text">
+                    Copyright.© 2023 nir@工業株式会社. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
