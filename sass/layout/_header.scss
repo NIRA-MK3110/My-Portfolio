@@ -11,6 +11,11 @@
   justify-content: space-between;
   align-items: center;
 
+  @include mq("xs") {
+    flex-direction: column; // ここを変更して縦並びにしました
+    align-items: stretch;   // こちらも変更して幅全体に広がるようにしました
+  }
+
   // [Logo Image]
   &__logo-image {
     width: auto;
