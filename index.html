@@ -1,135 +1,277 @@
 <!DOCTYPE html>
-<html lang=ja>
+<html lang="ja">
 <head>
-<meta charset=UTF-8>
-<meta name=viewport content="width=device-width, initial-scale=1.0">
-<meta name=description content=...>
-<meta name=keywords content=...>
-<title>柿森 正成(Masanari Kakimori)</title>
-<link rel=stylesheet href=css/css.reset.css>
-<meta name="description" content="SEO対策: ブランディング, 商品・サービスの認知, アクセス数向上, お問い合わせ増, 売上増, 資料ダウンロード,Web制作,Webデザイン">
-<link rel=icon href=img/logo.jpg>
-<link rel=preconnect href=https://fonts.googleapis.com>
-<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel=stylesheet>
-<link rel=stylesheet type=text/css href=/css/style.css>
-<meta name=author content="柿森  正成">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nir@のページ</title>
+    <meta name="description" content="効果的なWeb制作とWebデザインで、皆様の「想い」を形にするお手伝いをさせていただきます。詳しくはお問い合わせください。">
+    <link rel="stylesheet" href="/sass/base/_reset.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=M+PLUS+Rounded+1c:wght@700&family=Noto+Sans+JP:wght@500;800&family=Noto+Serif+JP&family=Open+Sans:ital@1&family=Oswald:wght@700&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="img/favicon.ico">
 </head>
 <body>
-    <header id="header">
-        <img class="site-logo" src="/img/logo.jpg" alt="ロゴ画像" width="100" height="100" style="margin:15px">
-        <div class="header-title-container">
-            <h1 class="header-main-title">柿森 正成</h1>
-            <h2 class="header-sub-title">(Masanari Kakimori)</h2>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo-link" title="ホームへ戻る">
+                <img class="header__logo-image" src="/img/nira_logo.png" alt="nir@-ニラ-" width="200" height="200">
+            </a>
         </div>
-        <nav class="main-navigation" id="main-navigation">
-            <ul class="navigation-list">
-                <li class="navigation-item"><a href="/about/about.html">About</a></li>
-                <li class="navigation-item"><a href="/works-list/works-list.html">Works</a></li>
-                <li class="navigation-item"><a href="/contact/contact.html">Contact</a></li>
-                <li class="navigation-item has-subnav">
-                    <a href="/other/other.html">Other</a>
-                    <input type="checkbox" id="menu">
-                    <label for="menu" class="menu-toggle">&gt;</label>
-                    <ul class="other-navigation-list">
-                        <li class="other-navigation-item"><a href="/other/hobby/hobby.html">趣味</a></li>
-                        <li class="other-navigation-item"><a href="/other/career/career.html">経歴</a></li>
-                        <li class="other-navigation-item"><a href="/other/objectives/objectives.html">目標</a></li>
-                        <li class="other-navigation-item"><a href="/other/personality/personality.html">性格</a></li>
+        <nav class="nav" aria-label="Primary Navigation">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <h2 class="nav__title">サービス</h2>
+                    <ul class="nav__sublist">
+                        <li class="nav__subitem nav__subitem--title"><span>- Services -</span></li>
+                        <li class="nav__subitem"><a href="production.html" class="nav__link">Web制作への想い</a></li>
+                        <li class="nav__subitem"><a href="design.html" class="nav__link">Webデザインへの想い</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="https://www.instagram.com/nira_._._/" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
-                    <img class="social-icon" src="/img/Instagram_Glyph_Gradient.png" alt="インスタグラム" width="29" height="29">
-                    </a>
+                <li class="nav__item">
+                    <h2 class="nav__title">Web制作実績</h2>
+                    <ul class="nav__sublist">
+                        <li class="nav__subitem nav__subitem--title"><span>- Works-production -</span></li>
+                        <li class="nav__subitem"><a href="/Web制作実績/production.html" class="nav__link">Web制作実績</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <h2 class="nav__title">Webデザイン実績</h2>
+                    <ul class="nav__sublist">
+                        <li class="nav__subitem nav__subitem--title"><span>- Works-design -</span></li>
+                        <li class="nav__subitem"><a href="/Webデザイン実績/design.html" class="nav__link">Webデザイン実績</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <h2 class="nav__title">想い</h2>
+                    <ul class="nav__sublist">
+                        <li class="nav__subitem nav__subitem--title"><span>- Concept -</span></li>
+                        <li class="nav__subitem"><a href="/ブログ/blog.html" class="nav__link">ブログ</a></li>
+                        <li class="nav__subitem"><a href="Q&A.html" class="nav__link">Q&A</a></li>
+                    </ul>
                 </li>
             </ul>
         </nav>
+        <!-- CTAボタン使いまわし -->
+<div class="cta-container">
+    <a href="contact.html" class="cta-btn" title="プロジェクトを相談する">プロジェクトを相談する</a>
+</div>
     </header>
 
-<main id=main-content>
-<div id=fadein-animation>
-<div id=fadein-animated-text class=text></div>
-</div>
+<main id="main-content" class="main-content">
+    <section class="main-visual">
+        <img class="main-visual__img" src="img/mv_03.png" alt="ヘッドホン、キーボードなど上半分に集中している画像">
+        <div class="main-visual__text">
+            <h1 class="main-visual__title">フロントエンドエンジニア兼Webデザイナー</h1>
+            <p class="main-visual__subtitle">皆様の「想い」、私が形にします。</p>
+        </div>
+    </section>
+
+<!-- サービスセクション -->
+    <section class="services">
+    <!-- タイトルコンポーネント -->
+        <header class="title">
+            <h2 class="title__jp">サービス</h2>
+            <h3 class="title__en">Services</h3>
+        </header>
+    <!-- Web制作セクション -->
+        <article class="production">
+        <!-- サブタイトルコンポーネント -->
+            <div class="subtitle">
+                <h4 class="subtitle__jp">Web制作</h4>
+                <p class="subtitle__en">Web production</p>
+            </div>
+        <!-- テキストコンテナコンポーネント -->
+            <div class="container">
+                <span class="text__jp">一つのクリック、無限の可能性</span>
+                <p class="description__jp">個々のお客様やプロジェクトに対するパーソナライズされたアプローチと、そのビジョンや目標を実現する能力に力点を置いています。
+                    <br>信頼と質の高い関係性を築くことで、お客様一人ひとりに最適なウェブ環境を創造し、大きな成果へと導きます。</p>
+                <!-- リンクボタンコンポーネント -->
+                <a href="/production.html" class="link-btn">Web制作への想い</a>
+            </div>
+        <!-- 画像コンポーネント -->
+            <figure class="images">
+                <img class="image" src="/img/service-production.jpg" alt="Web制作のイメージ画像">
+            </figure>
+        </article>
+    <!-- Webデザインセクション -->
+        <article class="design">
+            <div class="subtitle">
+                <h4 class="subtitle__jp">Webデザイン</h4>
+                <p class="subtitle__en">Web design</p>
+            </div>
+            <div class="container">
+                <span class="text__jp">見た目から使い心地まで</span>
+                <p class="description__jp">ウェブサイトがただ見て楽しむものではなく、使って価値を感じるものであるという私の「想い」から来ています。
+                    <br>お客様の「想い」が形になったとき、それがお客様だけでなく、訪れるすべてのユーザーにとって価値ある体験となることを目指します。</p>
+                <a href="/design.html" class="link-btn">Webデザインへの想い</a>
+            </div>
+            <figure class="images">
+                <img class="image" src="/img/service-design.jpg" alt="Webデザインのイメージ画像">
+            </figure>
+        </article>
+    </section>
+<!-- 制作実績ページのセクション -->
+    <section class="works">
+        <header class="title">
+            <h2 class="title__jp">Web制作実績</h2>
+            <h3 class="title__en">Works-production</h3>
+        </header>
+        <article class="production">
+            <div class="subtitle">
+                <h4 class="subtitle__jp">情報提供サイト</h4>
+                <p class="subtitle__en">Information providing site</p>
+            </div>
+            <div class="container">
+                <span class="text__jp">依頼内容の例</span>
+                <p class="description__jp">今回のLPはプロモーションで使用するため全体的に少し動きをつけたいです</p>
+                <p class="description__jp">その他、ページ構成などはお任せします</p>
+                <a href="/Web制作実績/production.html" class="link-btn">Web制作実績ページへ</a>
+            </div>
+            <figure class="images">
+                <img class="image" src="/img/works/works_01-レスポンシブ.png" alt="実際のWeb制作実績のスクリーンショット">
+            </figure>
+        </article>
+    </section>
+    <section class="works">
+        <header class="title">
+            <h2 class="title__jp">デザイン実績</h2>
+            <h3 class="title__en">Works-design </h3>
+        </header>
+        <article class="design">
+            <div class="subtitle">
+                <h4 class="subtitle__jp">ロゴデザイン</h4>
+                <p class="subtitle__en">Logo Design</p>
+            </div>
+            <div class="container">
+                <span class="text__jp">依頼内容の例</span>
+                <p class="description__jp">希望する色：青と白のコンビネーション</p>
+                <p class="description__jp">異なるバックグラウンドを持つ私たち一人一人が、共通の目標に向かって協力し、強力なエネルギーを生み出している感じ</p>
+                <a href="/Webデザイン実績/design.html" class="link-btn">Webデザイン実績ページへ</a>
+            </div>
+            <figure class="images">
+                <img class="image" src="img/works/works_02-logo.png" alt="実際のWebデザイン実績のスクリーンショット">
+            </figure>
+        </article>
+    </section>
+<!-- 想いセクション -->
+    <section class="concept">
+        <header class="title">
+            <h2 class="title__jp">想い</h2>
+            <h3 class="title__en">-Concept-</h3>
+        </header>
+        <article class="blog">
+            <div class="subtitle">
+                <h4 class="subtitle__jp">ブログ</h4>
+                <p class="subtitle__en">Blog</p>
+            </div>
+            <div class="container">
+                <span class="text__jp">アウトプット</span>
+                <p class="description__jp">最新のテクノロジーやデザイントレンド、クライアントの声、
+                    <br>そして私、nir@-ニラ-のキャリアストーリーもお届けします。</p>
+                <a href="/ブログ/blog.html" class="link-btn">ブログページへ</a>
+            </div>
+            <figure class="images">
+                <img class="image" src="/img/Blog.jpg" alt="blogのイメージ画像">
+            </figure>
+        </article>
+        <article class="questions">
+            <div class="subtitle">
+                <h4 class="subtitle__jp">よくある質問</h4>
+                <p class="subtitle__en">Questions</p>
+            </div>
+            <div class="container">
+                <span class="text__jp">Q&A</span>
+                <p class="description__jp">私の取扱言語、使用しているツールなどさまざまなトピックスをカバーしています。</p>
+                <a href="Q&A.html" class="link-btn">Q&Aページへ</a>
+            </div>
+            <figure class="images">
+                <img class="image" src="/img/service-production.jpg" alt="questionsのイメージ画像">
+            </figure>
+        </article>
+    </section>
+<!-- お問い合わせセクション -->
+    <section class="contact">
+        <header class="title">
+            <h2 class="title__jp">お問い合わせ</h2>
+            <h3 class="title__en">-Contact-</h3>
+        </header>
+        <div class="subtitle">
+            <h4 class="subtitle__jp">無料相談</h4>
+            <p class="subtitle__en">Free consultation</p>
+        </div>
+        <div class="container">
+            <span class="text__jp">あなたのアイデアやプロジェクトについてお聞かせください</span>
+            <p class="description__jp">質問やコメントもお待ちしています。</p>
+        </div>
+        <div class="cta-container">
+            <a href="contact.html" class="cta-btn" title="プロジェクトを相談する">プロジェクトを相談する</a>
+        </div>
+    </section>
+
 </main>
-<section class=profile-section>
-<div class=profile-content>
-<h2 class=profile-title>自己紹介</h2>
-<div class=profile-details>
-<img class=profile-image src=/img/face.png alt=顔画像>
-<ul class=profile-info-list>
-<li class=profile-info-item>名前：柿森 正成（Masanari Kakimori）</li>
-<li class=profile-info-item>生年月日: 1989年1月13日</li>
-<li class=profile-info-item>学習教材: Udemy,Progate,Codejump Pro</li>
-<li class=profile-info-item>学習記録:<a href=http://www.nira-35.jp/blog target=_blank rel="noopener noreferrer">ブログ</a></li>
-<li class=profile-info-item>
-SNS:
-<a href=https://twitter.com/nira__mk target=_blank rel="noopener noreferrer">X(旧Twitter)</a>,
-<a href=https://www.instagram.com/nira_._._/ target=_blank rel="noopener noreferrer">Instagram</a>,
-</li>
-</ul>
-</div>
-</div>
-<div class=profile-content>
-<div class=profile-sub-section>
-<h2 class=profile-subtitle>スキル</h2>
-<ul class=profile-skills-list>
-<li class=profile-skill-item>HTML</li>
-<li class=profile-skill-item>CSS</li>
-<li class=profile-skill-item>JavaScript</li>
-</ul>
-</div>
-</div>
-<div class=profile-content>
-<div class=profile-sub-section>
-<h2 class=profile-subtitle>ソフトウェア</h2>
-<ul class=profile-skills-list>
-<li class=profile-skill-item>Canva</li>
-<li class=profile-skill-item>GitHub</li>
-<li class=profile-skill-item>Netlify</li>
-</ul>
-</div>
-</div>
-<div class=profile-content>
-<h2 class=profile-subtitle>一言</h2>
-<p class=profile-description>Web制作を通じて、皆様をサポートし、貢献できるように努めます。</p>
-<p class=profile-description>皆様の「想い」を形にするお手伝いをさせていただきます。</p>
-</div>
-</section>
-<section class=work-section>
-<h2 class=work-title>最新の制作実績</h2>
-<div class=work-content>
-    <h3 class=work-title>コーポレートサイトの新規製作（仮想案件）</h3>
-    <div class=work-details>
-    <p class=work-description>制作期間: 3日（2023年8月22日から8月25日）</p>
-    <p class=work-description>使用言語: HTML/CSS(scss)/JavaScript</p>
-    </div>
-    <img src="../img/nir@工業株式会社.png" alt=スタッフ紹介ページのスクリーンショット class=work-image>
-    <p class=work-link><a href="/works-list/assets/index.html" target=_blank rel="noopener noreferrer">実際のリンクはこちらです</a></p>
-    </div>
-</section>
-<section class=work-section>
-<p class=work-link><a href="/works-list/works-list.html" target=_blank rel="noopener noreferrer">他の制作実績一覧</a></p>
-</section>
-<section class=contact-section>
-<div class=profile-content>
-<h2 class=contact-title>お問い合わせ</h2>
-<p class=contact-description>ご意見・ご感想は、私にとって貴重な情報です。</p>
-<p class=contact-description>サービスの改善に役立てるため、ぜひお聞かせください。</p>
-<p class=contact-description>※お問い合わせ内容によっては、返信にお時間をいただく場合がございます。</p>
-<p class=contact-description></p>
-<iframe width=640 height=480 src="https://forms.office.com/r/rdRfbMs2pb?embed=true" style=border:0;max-width:100%;max-height:100vh allowfullscreen title="Microsoft Formsの埋め込みフォーム"> </iframe>
-</div>
-</section>
-<a href=# class=page-top>トップへ戻る</a>
-<footer id=footer>
-<a href=/index.html class=page-home>ホームへ戻る</a>
-<div class=footer-end>© 2023 nir@. All rights reserved.
-<a href=https://www.instagram.com/nira_._._/ target=_blank rel="noopener noreferrer" style=text-decoration:none>
-<img class=social-icon src=img/Instagram_Glyph_Gradient.png alt=インスタグラム width=29 height=29> </a>
-</div>
-</footer>
-<script src=/js/script.js></script>
-<script src=/js/hamburger.js></script>
+
+    <footer class="footer">
+        <nav class="sitemap">
+            <h2 class="sitemap__title">サイトマップ</h2>
+            <ul class="sitemap__list">
+                <li class="sitemap__item">
+                    <h3 class="subtitle--jp">サービス</h3>
+                    <p class="subtitle--en">- Services -</p>
+                    <ul class="sitemap__sublist">
+                        <li class="sitemap__subitem"><a href="production.html" class="sitemap__link">Web制作</a></li>
+                        <li class="sitemap__subitem"><a href="design.html" class="sitemap__link">Webデザイン</a></li>
+                    </ul>
+                </li>
+                <li class="sitemap__item">
+                    <h3 class="sitemap__subtitle--jp">Web制作実績</h3>
+                    <p class="sitemap__subtitle--en">- Works-production -</p>
+                    <ul class="sitemap__sublist">
+                        <li class="sitemap__subitem"><a href="/Web制作実績/production.html" class="sitemap__link">Web制作実績</a></li>
+                    </ul>
+                </li>
+                <li class="sitemap__item">
+                    <h3 class="sitemap__subtitle--jp">Webデザイン実績</h3>
+                    <p class="sitemap__subtitle--en">- Works-design -</p>
+                    <ul class="sitemap__sublist">
+                        <li class="sitemap__subitem"><a href="/Webデザイン実績/design.html" class="sitemap__link">Webデザイン実績</a></li>
+                    </ul>
+                </li>
+                <li class="sitemap__item">
+                    <h3 class="sitemap__subtitle--jp">想い</h3>
+                    <p class="sitemap__subtitle--en">- Concept -</p>
+                    <ul class="sitemap__sublist">
+                        <li class="sitemap__subitem"><a href="/ブログ/blog.html" class="sitemap__link">ブログ</a></li>
+                        <li class="sitemap__subitem"><a href="Q&A.html" class="sitemap__link">Q&A</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+            <div class="cta-container">
+                <a href="contact.html" class="cta-btn" title="プロジェクトを相談する">プロジェクトを相談する</a>
+            </div>
+            <div class="footer__social-links">
+                <a href="https://twitter.com/nira__mk" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="social-link">
+                    <img src="img/logo-black.png" alt="Twitter Logo" width="40" height="40"></a>
+                <a href="https://www.instagram.com/nira_._._/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                    <img src="img/Instagram_Glyph_Gradient.png" alt="Instagram Logo" width="40" height="40"></a>
+            </div>
+        <nav class="footer__legal">
+            <a href="policy.html" class="footer__legal-link">プライバシーポリシー</a>
+            <a href="terms.html" class="footer__legal-link">利用規約</a>
+            <a href="invoice.html" class="footer__legal-link">適格請求書発行事業者の登録</a>
+        </nav>
+        <div class="footer__copyright">
+            <p>&copy; 2023 nir@-ニラ-. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/style.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,13 @@
+$transition-speed: 0.5s;
+$transition-easing: cubic-bezier(0.25, 0.1, 0.25, 1);
+$swing-animation-time: 0.5s;
+
+// _animations.scss
+// スイングアニメーション: 要素を左右に揺れ動かします。
+@keyframes swing {
+    0%, 100% { transform: rotate(0deg); }
+    20% { transform: rotate(15deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(5deg); }
+    80% { transform: rotate(-5deg); }
+}

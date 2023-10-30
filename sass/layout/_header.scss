@@ -1,0 +1,24 @@
+@use "../base" as *;
+@use "../abstracts" as *;
+@use "../components" as *;
+
+// _header.scss
+// [Header Section]
+.header {
+  background-color: $white-smoke;
+  padding: $space-md $space-lg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // [Logo Image]
+  &__logo-image {
+    width: auto;
+    height: 100px;
+  }
+
+  // [Accessibility: Focus State]
+  &:focus-within {
+    outline: 3px solid $green-1;
+  }
+}

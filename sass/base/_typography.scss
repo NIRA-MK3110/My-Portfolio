@@ -1,0 +1,36 @@
+// _typography.scss
+
+$base-font-size: 1.125rem;
+
+// フォントファミリー
+$font-jp-title: 'M PLUS Rounded 1c', sans-serif;
+$font-en-title: 'Oswald', sans-serif;
+$font-jp-subtitle: 'Noto Sans JP', sans-serif;
+$font-en-subtitle: 'Lato', sans-serif;
+$font-jp-body: 'Noto Serif JP', serif;
+$font-en-body: 'Open Sans', sans-serif;
+$font-jp-cta: 'Noto Sans JP', sans-serif;
+$font-en-cta: 'Roboto', sans-serif;
+$font-link-btn: 'Kosugi Maru', sans-serif;// 英語と日本語の両方に対応するリンクボタン用
+
+// フォントサイズ
+$h1-size: 2.125rem;
+$h2-size: 1.825rem;
+$h3-size: 1.625rem;
+$h4-size: 1.425rem;
+$body-size: 1.125rem;
+
+// モバイルビューのフォントサイズ
+$h1-size-mobile: 1.75rem;
+$h2-size-mobile: 1.5rem;
+$h3-size-mobile: 1.25rem;
+$body-size-mobile: 1rem;
+
+// タイポグラフィ
+$font-size-root: 1rem;
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 2rem;

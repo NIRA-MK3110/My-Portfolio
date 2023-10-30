@@ -1,0 +1,48 @@
+@use "../base" as *;
+@use "../abstracts" as *;
+@use "../components" as *;
+
+// _footer.scss
+.footer,
+.contact {
+    background: $grey-1;
+    color: $almost-white;
+    padding: $space-lg;
+    text-align: center;
+
+    &__quick,
+    &__legal,
+    &__copyright {
+        margin-bottom: $space-lg;
+    }
+
+    &__legal-link,
+    .social-link {
+        margin-right: $space-sm;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: $space-lg;
+    }
+
+    .cta-container {
+        margin: $space-lg 0;
+    }
+
+    &__copyright {
+        color: $almost-white;
+        font-size: $font-size-sm; // フォントサイズを適切に設定
+    }
+
+    @include mq("xs") { padding: $space-md; }
+    @include mq("sm") { padding: $space-lg; }
+    @include mq("md") { padding: $space-xl; }
+    @include mq("lg") { padding: $space-xxl; }
+}

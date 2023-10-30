@@ -1,0 +1,58 @@
+@use "../base" as *;
+@use "../abstracts" as *;
+@use "../components" as *;
+
+// _sitemap.scss
+.sitemap {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 0 $space-lg;
+    }
+
+    &__item {
+        flex-grow: 1;
+        text-align: center;
+        margin: 0 $space-md $space-sm;
+        border-right: 1px solid $almost-white;
+
+        &:last-child {
+            margin-right: 0;
+            border-right: none;
+        }
+    }
+
+    &__title,
+    &__link {
+        font-size: $font-size-md;
+        margin-bottom: $space-xs;
+        font-family: $font-jp-title;
+    }
+
+    &__link {
+        color: $almost-white;
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            color: darken($almost-white, 10%);
+            text-decoration: none;
+        }
+    }
+
+    @include mq("xs") {
+        &__title,
+        &__link {
+            font-size: $font-size-sm;
+        }
+    }
+
+    @include mq("sm") {
+        &__title,
+        &__link {
+            font-size: $font-size-md;
+        }
+    }
+}
