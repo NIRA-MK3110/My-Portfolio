@@ -38,3 +38,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+// 画像要素を全て選択
+const images = document.querySelectorAll('.image');
+const modal = document.getElementById('modal');
+const modalImg = document.getElementById("modal-image");
+const captionText = document.getElementById("caption");
+const close = document.getElementsByClassName("close")[0];
+
+// 各画像に対してクリックイベントを設定
+images.forEach(img => {
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+});
+
+// クローズボタンのクリックイベントを設定
+close.onclick = function() { 
+    modal.style.display = "none";
+}
+
