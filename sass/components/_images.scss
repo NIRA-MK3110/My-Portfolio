@@ -4,54 +4,65 @@
 @use "../base/layout-spacing" as *;
 @use "../base/animations" as *;
 
-// _images.scss
-
-// 画像コンポーネント
+/* 画像コンポーネントのスタイル */
 .images {
     position: relative;
     display: block;
     margin-bottom: $space-lg;
-
-    // 画像要素
-    .image {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        border-radius: $border-radius;
-        box-shadow: $box-shadow-light;
-        transition: box-shadow 0.3s ease, transform 0.3s ease;
-
-        // ホバー時のスタイル
-        &:hover,
-        &:focus {
-            box-shadow: $box-shadow-medium;
-            transform: scale(1.05);
-        }
-
-        // フォーカス時のスタイル
-        &:focus {
-            outline: 3px solid $green-1;
-        }
-    }
-
-    // キャプション
-    figcaption {
-        font-family: $font-jp-body;
-        font-size: $font-size-sm;
-        color: $grey-3;
-        background-color: rgba($white-smoke, 0.8);
-        padding: $space-xs $space-sm;
-        border-radius: $border-radius;
-        position: absolute;
-        bottom: $space-xs;
-        left: $space-xs;
-        max-width: 80%;
-
-        // アクセシビリティを考慮して、テキストが画像と重なる場合のコントラストを高める
-        text-shadow:
-            -1px -1px 0 $black,
-            1px -1px 0 $black,
-            -1px 1px 0 $black,
-            1px 1px 0 $black;
-    }
 }
+
+/* 画像要素のスタイル */
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-light;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.image:hover,
+.image:focus {
+    cursor: zoom-in; /* カーソルをズームインアイコンに変更 */
+    box-shadow: $box-shadow-medium;
+    transform: scale(1.05);
+}
+
+/* モーダルスタイル */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
