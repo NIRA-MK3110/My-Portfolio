@@ -9,7 +9,7 @@
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        margin: 0 $space-lg;
+        margin: 0 auto;
     }
 
     &__item {
@@ -18,6 +18,7 @@
         margin: 0 $space-md $space-sm;
         border-right: 1px solid $almost-white;
 
+        // 最後の項目の余分なマージンとボーダーを削除
         &:last-child {
             margin-right: 0;
             border-right: none;
@@ -42,10 +43,20 @@
         }
     }
 
+    // スマートフォン用のスタイル調整
     @include mq("xs") {
+        &__list {
+            margin: 0; 
+        }
+
+        &__item {
+            margin: 0 0 $space-sm; 
+            border-right: none; 
+        }
+
         &__title,
         &__link {
-            font-size: $font-size-sm;
+            font-size: $font-size-sm; 
         }
     }
 
