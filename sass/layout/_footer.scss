@@ -19,7 +19,7 @@
     &__legal-link,
     .social-link {
         margin-right: $space-sm;
-
+        
         &:last-child {
             margin-right: 0;
         }
@@ -38,11 +38,35 @@
 
     &__copyright {
         color: $almost-white;
-        font-size: $font-size-sm; // フォントサイズを適切に設定
+        font-size: $font-size-sm;
     }
 
-    @include mq("xs") { padding: $space-md; }
+    // Responsive Breakpoints
+    @include mq("xs") {
+        padding: $space-md;
+        text-align: center;
+
+        &__quick,
+        &__legal,
+        &__social-links,
+        &__copyright {
+            border: none;
+        }
+    }
+
     @include mq("sm") { padding: $space-lg; }
     @include mq("md") { padding: $space-xl; }
     @include mq("lg") { padding: $space-xxl; }
+}
+
+// Additional styles to ensure navigation links and items are centered in mobile view
+.sitemap__item,
+.footer__legal-link,
+.social-link {
+    @include mq("xs") {
+        text-align: center; 
+        display: block; 
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
