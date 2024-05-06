@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta property='og:type' content='website'>
-  <meta property='og:title' content='フロントエンドエンジニア兼WebデザイナーMASANARI KAKIMORI ポートフォリオ'>
+  <meta property='og:title' content='フロントエンドエンジニア兼Webデザイナー MASANARI KAKIMORI ポートフォリオ'>
   <meta property='og:url' content='URLが入る'>
   <meta property='og:description' content='MASANARI KAKIMORIのポートフォリオサイトです。'>
   <meta property="og:image" content="img/ogp.png">
   <meta name="description" content="MASANARI KAKIMORIのポートフォリオサイトです" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="Description" content="" />
+  <meta name="Keywords" content="" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
   <title>MASANARI KAKIMORI ポートフォリオ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
-  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="/css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="/css/style.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" />
   <link rel=”canonical” href=”URLが入る” />
 </head>
@@ -30,10 +34,10 @@
         </h1>
         <nav class="gnav">
           <ul class="gnav-list">
-            <li class="gnav-item"><a href=".#works">WORKS</a></li>
-            <li class="gnav-item"><a href="./#skill">SKILL</a></li>
-            <li class="gnav-item"><a href="./#about">ABOUT</a></li>
-            <li class="gnav-item"><a href="./#contact">CONTACT</a></li>
+            <li class="gnav-item"><a href="#works">WORKS</a></li>
+            <li class="gnav-item"><a href="#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -42,43 +46,134 @@
 
     <main class="content">
 
-      <article class="article">
-        <div class="article-container">
-          <h2 class="article-title">Figmaデザイン</h2>
-          <div class="article-body">
-            <p>
-              <img src="./img/works_item/works_item_05(01).png" alt="">
-              <img src="./img/works_item/works_item_05(02).png" alt="">
-              <img src="./img/works_item/works_item_05(03).png" alt="">
-              <img src="./img/works_item/works_item_05(04).png" alt="">
-              <img src="./img/works_item/works_item_05(05).png" alt="">
-            </p>
-            <p>
-              Figmaを使用したメニュー/ポスター/チラシ/フライヤーを制作しました
-            </p>
-            <h3>URL</h3>
-            <p><a href="https://www.figma.com/file/Z1p1dSfR9jgKVloqa1qC0c/Webdesign%EF%BC%88MASANARI-KAKIMORI%EF%BC%89?type=design&node-id=0%3A1&mode=design&t=W0sBSbHiQGEv3KX4-1" target="_blank" rel="noopener">Figmaデータ（閲覧のみ）</a></p>
-            <h3>ツール</h3>
-            <p>Figma</p>
-            <h3>制作期間</h3>
-            <p>1日（1枚あたり）</p>
-            <h3>こだわりPOINT</h3>
-            <p>余白にこだわり、すっきり、読みやすく写真をインパクトに見せれるように工夫しました</p>
-            <h3>特徴</h3>
-            <p>
-              落ち着いたレイアウト/写真はインパクトに/派手さはない
-            </p>
-            <h3>全体を通して</h3>
-            <p>
-              常に読み手のことを考え、余白/文字の大きさ・間隔/書体/余白/色/など何度もブラッシュアップを行いました。
-            </p>
-          </div>
-          <div class="home-link">
-            <a href="./#works">Works一覧へ</a>
+      <!-- mv -->
+      <div class="mv">
+        <div class="mv-container">
+          <p class="mv-title">MASANARI KAKIMORI</p>
+          <p class="mv-subtitle">PORTFOLIO</p>
+          <p class="mv-text">
+            ユーザーとお客様が心から満足できる<br class="sp-only">結果を提供することを常に心掛けています。<br>
+            どんなプロジェクトにも柔軟に対応できる<br class="sp-only">多才なフリーランスとしての地位を築き上げることを目指しています。<br>
+          </p>
+        </div>
+      </div>
+      <!-- /mv -->
+
+      <!-- works -->
+      <section class="works section" id="works">
+        <div class="container">
+          <h2 class="title">WORKS</h2>
+          <div class="works-list">
+            <a class="works-item" href="works-item1.html">
+              <div class="works-img"><img src="img/works_list_01.png" alt="" /></div>
+              <p class="works-name">プロモーション用LP新規制作</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+            <a class="works-item" href="works-item2.html">
+              <div class="works-img"><img src="img/works_list_02.png" alt="" /></div>
+              <p class="works-name">スタッフ紹介ページ制作</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+            <a class="works-item" href="works-item3.html">
+              <div class="works-img"><img src="img/works_list_03.png" alt="" /></div>
+              <p class="works-name">ランディングページデザイン</p>
+              <p class="works-info">Design / Responsive</p>
+            </a>
+            <a class="works-item" href="works-item4.html">
+              <div class="works-img"><img src="img/works_list_04.png" alt="" /></div>
+              <p class="works-name">新規サイト制作</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+            <a class="works-item" href="works-item5.html">
+              <div class="works-img"><img src="/img/works_list_05.jpg" alt="" /></div>
+              <p class="works-name">フライヤー作成</p>
+              <p class="works-info">Design / Figma</p>
+            </a>
           </div>
         </div>
-      </article>
+      </section>
+      <!-- /works -->
 
+      <!-- skill -->
+      <section class="skill section" id="skill">
+        <div class="container">
+          <h2 class="title">SKILL</h2>
+          <div class="skill-list">
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill_coding.svg" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">コーディングスキル</h3>
+                <p class="skill-text">
+                  HTML / CSS / JavaScript / jQuery / PHP</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill_design.svg" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">デザインスキル</h3>
+                <p class="skill-text">
+                  Figma / Canva / Photoshop</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill_seo.svg" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">SEOのスキル</h3>
+                <p class="skill-text">
+                  HTMLタグを最適化できる程度</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill_tool.svg" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">ノーコードツールスキル</h3>
+                <p class="skill-text">
+                  STUDIO / Wordpress / Shopify</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /skill -->
+
+      <!-- about -->
+      <section class="about section" id="about">
+        <div class="container">
+          <h2 class="title">ABOUT</h2>
+          <div class="profile">
+            <p class="profile-img">
+              <img src="img/String_My-logo.svg" alt="">
+            </p>
+            <div class="profile-body">
+              <p>
+                氏名：柿森　正成（かきもり　まさなり）
+                <br>長崎県五島出身。自然豊かなこの小さな島の高校を卒業後、神奈川県横浜市の金融業界に飛び込みました。窓口業務と営業の職に就き、この街での12年間で、さまざまなお客様との出会いを通じて、ビジネスの現場での実践的なスキルを身につけることができました。その後、地元への転勤を経て、さらに4年間金融の世界で働き、深い知見と多くの学びを得ることができました。
+              </p>
+              <p>
+                「自分自身のスキルで市場に立ち向かいたい」という思いから、プログラミングとウェブデザインを独学で学び始めました。
+              </p>
+              <p>
+                2023年11月1日にフリーランスとしてのキャリアをスタートさせました。金融業界で培った顧客対応能力とビジネススキルを生かし、テクノロジーの力でクライアントの課題解決に貢献していきたいと考えています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /about -->
+
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <h2 class="title">CONTACT</h2>
+          <p class="lead">
+            お問い合わせは、<br class="sp-only">各クラウドソーシングの「相談する」にてお願いいたします。
+          </p>
+          <div class="contact-list">
+            
+          </div>
+        </div>
+      </section>
+      <!-- /contact -->
       <div class="page-top" id="js-page-top">
         <span class="material-icons-outlined">expand_less</span>
       </div>
@@ -91,7 +186,7 @@
     <!-- /footer -->
 
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type='text/javascript' src="js/script.js"></script>
 </body>
 </html>
